@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form -->
+    <form action="전달할 URL" method="get">
+        <label for="memName">이름 :</label> 
+        <input type="text" id="memName" name="memName" maxlength="10" placeholder="이름을 입력하세요">
+        <br>
+
+        <label for="memAge">나이 :</label> 
+        <input type="number" id="memAge" name="memAge" maxlength="3" size="18" placeholder="나이를 입력하세요">
+        <br>
+
+        성별: 
+        <input type="radio"  name="memMG" value="남자" checked>남자
+        <input type="radio"  name="memMG" value="여자" >여자
+        <br>
+
+        전화번호:
+        <select name="memFirst" size="3" multiple>
+            <option value="060">060</option>
+            <option value="061">061</option>
+            <option value="062">062</option>
+            <option value="063" selected>063</option>
+        </select>
+        <input type="text" name="memTel" placeholder="전화번호 입력하세요">
+
+        <br>
+        관심분야:
+        <input type="checkbox" name="habby1" value="IT">IT 
+        <input type="checkbox" name="habby2" value="Mobile">Mobile
+        <input type="checkbox" name="habby3" value="Programing">Programing
+        <input type="checkbox" name="habby4" value="IOT">IOT
+
+        <br>
+        자기소개:
+        <textarea rows="10" cols="50" name="memcontent"></textarea>
+        
+        <br>
+        <input type="button" value="가입">
+        <input type="button" value="취소">
+
+        <br>
+        <button type="submit">가입</button>
+        <button type="reset">취소</button>
+
+        <br>
+        <fieldset style="width: 380px; height: 165px;">
+            <legend>피자 사이즈</legend>
+            <input type="radio" name="pzsize" value="small">Small
+            <input type="radio" name="pzsize" value="medium">Medium
+            <input type="radio" name="pzsize" value="large">Large
+        </fieldset>
+
+        <br>
+        배달희망시간:
+        <input type="datetime-local">
+        <input type="time" min="09:00" max="18:00">
+
+    </form>
+</body>
+</html>

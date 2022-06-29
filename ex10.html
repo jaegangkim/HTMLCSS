@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 자식 선택자 
+        .box>p{
+            color: red;
+        }                   */
+
+        /* 하위 선택자 */
+        .box p{
+            color: blue;
+        }
+        
+        /* 인접 형제 선택자 
+        h1+h2{
+            color: red;
+        }                       */
+
+        /* 일반 형제 선택자 */
+        h1~h2{
+            color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>lorem 1</p>
+        <div>
+            <p>lorem 2</p>
+        </div>
+        <p>lorem 3</p>
+    </div>
+
+    <h1>lorem 1</h1>
+    <h2>lorem 2</h2>
+    <h2>lorem 3</h2>
+
+</body>
+</html>
